@@ -14,7 +14,7 @@ mp.events.addCommand('tp', (player, fullText, x, y, z) => { // we create the com
 });
 
 mp.events.addCommand('me', (player, fullText) => { // Creating /me command, a fundamental in roleplays. 
-    if (fullText == undefined) { // if no text, help. 
+    if (fullText == undefined) { 
         player.outputChatBox('/me [message]'); 
         return;
     }
