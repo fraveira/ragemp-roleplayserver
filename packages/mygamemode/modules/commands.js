@@ -23,6 +23,16 @@ mp.events.addCommand('me', (player, fullText) => { // Creating /me command, a fu
 // broadcastInRange in a 20 meters radius. 
 });
 
+mp.events.addCommand('wh', (player, fullText) => { // Whisper message
+    if (fullText == undefined) { 
+        player.outputChatBox('/wh [message]'); 
+        return;
+    }
+
+    mp.players.broadcastInRange(player.position, 4, `!{#78F1F1} ${player.name} ${fullText}`); 
+// broadcastInRange in a 4 meters radius. 
+});
+
 mp.events.addCommand('ame', (player, fullText) => { // /ame is fundamental in roleplay games, to describe conditions  
     if (fullText == undefined) {
         player.outputChatBox('/ame [message]'); 
