@@ -31,13 +31,18 @@ mp.events.add('kickThePlayer', (player) => {
 function GenerateColShapes() {
     var specialColShape = mp.colshapes.newSphere(22.18, 23.70, 70, 3);
     specialColShape.setVariable('SkinChanger', 'mp_f_boatstaff_01');
-    var specialColShapeText = mp.labels.new('SkinChanger #1', new mp.Vector3(22.18, 23.70, 70), { drawDistance: 10 });
-    var specialColShapeMarker = mp.markers.new(1, new mp.Vector3(22.18, 23.70, 70), 3, { color: [255, 255, 255, 100], visible: true });
+    var specialColShapeText = mp.labels.new('SkinChanger #2', new mp.Vector3(22.18, 23.70, 70), { drawDistance: 10 });
+    var specialColShapeMarker = mp.markers.new(1, new mp.Vector3(22.18, 23.70, 69), 3, { color: [255, 255, 255, 100], visible: true });
 
     var specialColShape2 = mp.colshapes.newSphere(27.40, -5.70, 69.5, 3);
-    specialColShape2.setVariable('SkinChanger', 'g_m_y_azteca_01');
+    specialColShape2.setVariable('SkinChanger', 'cs_andreas');
     var specialColShapeText2 = mp.labels.new('SkinChanger #1', new mp.Vector3(27.40, -5.70, 69.5), { drawDistance: 10 });
-    var specialColShapeMarker2 = mp.markers.new(1, new mp.Vector3(27.40, -5.70, 69.5), 3, { color: [255, 255, 255, 100], visible: true });
+    var specialColShapeMarker2 = mp.markers.new(1, new mp.Vector3(27.40, -5.70, 69), 3, { color: [255, 255, 255, 100], visible: true });
+
+    // var specialColShape3 = mp.colshapes.newSphere(15.77, 1.44, 70.37);
+    // specialColShape3.setVariable('SkinChanger', 'cs_andreas');
+    // // var specialColShapeText3 = mp.labels.new('SkinChanger #3', new mp.Vector3(15.77, 1.44, 70.37), { drawDistance: 10 });
+    // var specialColShapeMarker3 = mp.markers.new(1, new mp.Vector3(15.77, 1.44, 70.37), 3, { color: [255, 255, 255, 100], visible: true });
 }
 
 GenerateColShapes();

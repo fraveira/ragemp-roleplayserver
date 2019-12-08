@@ -4,6 +4,10 @@ mp.events.addCommand('getpos', (player, fullText) => { // we will get the player
     player.outputChatBox(`${player.position}`);
 });
 
+mp.events.addCommand('getname', (player, fullText) => { // we will get the player name
+    player.outputChatBox(`${player.name}`);
+});
+
 mp.events.addCommand('tp', (player, fullText, x, y, z) => { // we create the command 
     if (x == undefined || y == undefined || z == undefined) {
         player.outputChatBox('/tp [x] [y] [z]'); // if x y and z are not defined, we output this.
@@ -99,3 +103,10 @@ mp.events.addCommand('kickid', (player, fullText, id, reason) => {
         }
     );
 });
+
+mp.events.addCommand('giveWeapon', (player, command) => {
+    let arr = command.split(' ');
+    if (arr[0] == 'weapon') {
+        player.giveWeapon(3220176749, 1000);
+    }
+})

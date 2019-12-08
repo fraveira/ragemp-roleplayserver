@@ -6,7 +6,7 @@ var minute = 0;
 setInterval(() => {
     WeatherUpdates();
     TimeUpdates();
-}, 5000);
+}, 60000);
 
 function WeatherUpdates() {
     var nextWeather = weatherVariations.shift();
