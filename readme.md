@@ -16,10 +16,6 @@ Everything I make public here goes inside the folder "Packages/mygamemode*", so 
 
 *Placeholder. 
 
-```
-Give examples
-```
-
 ### Installing work environment
 
 Install nodejs.
@@ -46,7 +42,7 @@ That means our NODE Package manager is working now correctly.
 Now we install packages required to run a RAGEMP GTA V server. 
 
 ```
-npm -v
+npm init
 
 ```
 
