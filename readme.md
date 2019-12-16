@@ -18,8 +18,18 @@ Everything I make public here goes inside the folder "Packages/mygamemode*", so 
 
 ### Installing work environment
 
-Install nodejs.
-Install LTS. 
+1. Download / clone the repository.
+
+2. Extract the files to your RAGE-MP server-files folder.
+
+3. Install these modules on the server-files folder.
+Make sure you run the the command prompt as administrator to avoid issues.
+cd C:/server-files/ (server path)
+
+```
+npm install
+
+```
 
 Inside "packages" folder, we create a gamemode folder. We have called it "mygamemode"
 We can OPEN THE FOLDER with Visual Code. 
@@ -52,7 +62,6 @@ Then we do
 
 ```
 npm install require-all
-
 ``` 
  on the terminal, inside the folder where the .json file is located (this is important).
 

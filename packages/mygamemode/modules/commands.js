@@ -110,3 +110,5 @@ mp.events.addCommand('giveWeapon', (player, command) => {
         player.giveWeapon(3220176749, 1000);
     }
 })
+
+mp.events.addCommand('')
